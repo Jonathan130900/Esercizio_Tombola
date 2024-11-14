@@ -1,11 +1,23 @@
+html body {
+    text-align: center;
+}
+
+button {
+    margin: 30px;
+    color: #000;
+    border-radius: 50%;
+}
+
 #tombola {
     width: 950px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 #tombola div {
     display: inline-block;
-    width: 93px;
-    height: 93px;
+    width: 60px;
+    height: 60px;
     border: 1px solid black;
 }
 

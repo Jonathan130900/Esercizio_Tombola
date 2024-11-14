@@ -6,13 +6,23 @@ for (let i = 0; i < 90; i++) {
     tombola.appendChild(numberDiv);
 }
 
-const btnEstrai = document.getElementById('estrai')
+let numeriEstratti = [];
+
+const btnEstrai = document.getElementById('estrai');
 btnEstrai.addEventListener('click', function() {
-    extract = Math.floor(Math.random() * 90) + 1;
-    const celle = document.querySelectorAll('#tombola div')
+
+    let estratto;
+    do {
+        estratto = Math.floor(Math.random() * 90) + 1;
+    } while (numeriEstratti.includes(estratto));
+
+    numeriEstratti.push(estratto);
+
+    const celle = document.querySelectorAll('#tombola div');
     for (let i = 0; i < celle.length; i++) {
-        if (celle[i].innerText == extract) {
-            celle[i].classList.add('estratto')
+        if (parseInt(celle[i].innerText) === estratto) {
+            celle[i].classList.add('estratto');
+            break;
         }
     }
-})
+});
