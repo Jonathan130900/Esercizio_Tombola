@@ -1,15 +1,23 @@
 html body {
     text-align: center;
+    background: #2a0753;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 button {
     margin: 30px;
-    color: #000;
-    border-radius: 50%;
+    width: 80px;
+    height: 30px;
+    color: #7a9ff0;
+    background-color: #580092;
+    border-radius: 40px;
+    font-weight: bolder;
 }
 
 #tombola {
-    width: 950px;
+    width: 600px;
     margin: 0 auto;
     margin-top: 30px;
 }
@@ -18,9 +26,10 @@ button {
     display: inline-block;
     width: 60px;
     height: 60px;
-    border: 1px solid black;
+    border: 1px solid #1b4db9;
+    color: #7a9ff0;
 }
 
 .estratto {
-    background-color: darkred;
+    background-color: #580092;
 }
